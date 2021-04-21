@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FoodMaps</string>
+    <string name="create_an_account">Create an Account</string>
+
+    <string name="first_name_input">First Name</string>
+
+    <string name="last_name_input">Last Name</string>
+
+    <string name="email_input">Email</string>
+    <string name="password_input">Password</string>
+    <string name="confirm_password_input">Confirm Password</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_register_button">Register</string>
+    <string name="preference_submit_button">Submit</string>
+    <string name="result_return_button">Return</string>
+</resources>
