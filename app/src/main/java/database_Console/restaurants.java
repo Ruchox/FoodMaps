@@ -2,6 +2,8 @@ package database_Console;
 
 public class restaurants {
 	//variables
+
+	//each variable has sample values from the database listed
 	//title	                    
 	//Zarza Latin Food & Grill
 	String title = "";
@@ -42,11 +44,11 @@ public class restaurants {
 	      this.googleLink = googleLink;
 			}
 
+			//basic get methods
 	  public String getTitle()
 	  {
 	    return title;
 	  }
-
 	  public String getRating()
 	  {
 	    return rating;
@@ -76,7 +78,7 @@ public class restaurants {
 
 
 	  //methods 
-	  String printRes(){
+	  String printRes(){//returns a restaurant and all its info
 	    String Res = "Name: "+ getTitle() + "\n " + "Rating: "+ getRating() + "\n " + "Restaurant Type: "+ subCategory + "\n " + "Address: "+ getAddress() + "\n " + "Phone Number: "+ getPhoneNumber() + "\n " + "Link: "+ getGoogleLink() + "\n\n\n";
 	    return Res;
 	  }

@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 
 
-public class User {
-	//variables
+public class User {//custom object
 
+	//variables
 	public String UserID = "";  
 	public String email = "";
 	public String password = "";
@@ -206,7 +206,7 @@ public class User {
 	  
 	  
 	  //methods 
-	  String printUserInfo(){
+	  String printUserInfo(){//returns basic user info
 	    String Res = "UniqueID: "+ UserID + "\n " + "E-mail: "+ email + "\n " + "Password: "+ password + "\n " + "First Name: "+ fName + "\n " + "Last Name: "+ lName + "\n\n\n";
 	    return Res;
 	  }
@@ -215,7 +215,7 @@ public class User {
 	  	  int ran = (int)Math.floor(Math.random()*(max-min+1)+min);
 	      //System.out.println("Random value in int from "+min+" to "+max+ ": "+ran);
 	      return ran;
-	    }
+	    }//random num gen
 	  
 	  public int yesCount() {
 		  int count = 0;
@@ -281,9 +281,9 @@ public class User {
 		  }
 		  System.out.println("Count: "+count);
 		  return count;
-	  }
+	  }//finds how many restarants they will eat at
 
-	  public void updatePriority() {
+	  public void updatePriority() {//determines todays suggestion and updats queue
 		  
 		  if(newUser == true) {
 			  System.out.println("NEW USER");
@@ -292,7 +292,6 @@ public class User {
 			  if(getLikesAmerican() == "Yes") {
 				  AmericanPriority = count;
 				  count--;
-				  //System.out.println(AmericanPriority);
 			  }else {
 				  AmericanPriority = -99;
 			  }
@@ -573,10 +572,6 @@ public class User {
 				  }
 			  }
 
-
-
-
-
        if(i == 12){//update everything -99<x<12 +1
 		  if(AmericanPriority > -50 && AmericanPriority < 12) {
 					  AmericanPriority++;
@@ -629,8 +624,10 @@ public class User {
 		  
 		  
 	  }
-  		public void updatePreferences( String LikesAmerican, String LikesAsian, String LikesBakery, String LikesBar, String LikesBreakfast, String LikesCafe, String LikesCaribbean, 
-		  String LikesChicken, String LikesEuropean, String LikesFastFood, String LikesHealthFood, String LikesLatinAmerican, String LikesPizza, String LikesSandwich, String LikesSeafood) { //int AmericanPriority, int AsianPriority, int BakeryPriority, int BarPriority, int BreakfastPriority, int CafePriority, int CaribbeanPriority, int ChickenPriority, int EuropeanPriority, int FastFoodPriority, int HealthFoodPriority,  int LatinAmericanPriority, int PizzaPriority, int SandwichPriority, int SeafoodPriority
+
+	  //set preferences to new values
+	  public void updatePreferences( String LikesAmerican, String LikesAsian, String LikesBakery, String LikesBar, String LikesBreakfast, String LikesCafe, String LikesCaribbean,
+		  String LikesChicken, String LikesEuropean, String LikesFastFood, String LikesHealthFood, String LikesLatinAmerican, String LikesPizza, String LikesSandwich, String LikesSeafood) {
 	  	
 	  	this.LikesAmerican = LikesAmerican;  
 	  	this.LikesAsian = LikesAsian;
@@ -647,6 +644,6 @@ public class User {
 	  	this.LikesPizza = LikesPizza;
 	  	this.LikesSandwich = LikesSandwich;
 	  	this.LikesSeafood = LikesSeafood; 
-}
+		}
 
 	}
