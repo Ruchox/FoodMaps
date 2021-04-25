@@ -29,9 +29,8 @@ The only third party library (jar) is the mysql-connector-java-8.0.23.jar as tha
 
 Organization
 
-The code is in 2 halves, the backend java code and the frontend kotlin code. To access the frontend code, follow the folder path app -> java -> com.example.foodmaps.data -> activity, once here all the activity 
-files can be seen, each one of these represents a page of the app and can be viewed in the AVD. For the backend java code follow the folder path app -> java -> database_Console. Here there are three files, 
-Connect (The Main), restaurants (custom object), and User (another custom object).
+The code is in 2 halves, the backend java code and the frontend kotlin code. Before accessing any part of the code, make sure project is in android view. To access the frontend code, follow the folder path app -> java -> com.example.foodmaps.data -> activity, once here all the activity 
+files can be seen, each one of these represents a page of the app and can be viewed in the AVD. For the backend java code follow the folder path app -> java -> database_Console. Here there are three files, Connect (The Main), restaurants (custom object), and User (another custom object). To run the Java files, right-click on Connect.java in Android Studio and select Run 'Connect.main()' With Coverage
 
 Finally there is a file called DatabaseExport that can create the database at any time, just copy the contents into a system that accepts mySQL queries
 
