@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.foodmaps.R
 import com.example.foodmaps.data.model.Preference
 
+/*
+    Adapts the information that will be used for the preference pages recycler view.
+ */
 class ItemAdapter(private val context : Context,
                   private val dataset: List<Preference>)
     : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
@@ -26,7 +29,7 @@ class ItemAdapter(private val context : Context,
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.checkBox.text = context.resources.getString(item.stringResourceId)
+        holder.checkBox.text = context.resources.getString(item.preference)
     }
 
     override fun getItemCount(): Int = dataset.size

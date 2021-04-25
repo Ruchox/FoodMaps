@@ -1,3 +1,4 @@
 package com.example.foodmaps.data.model
 
-data class Preference(val stringResourceId: Int)
+// Data class for Preference object.
+data class Preference(val preference : Int)

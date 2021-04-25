@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.foodmaps.R
 import com.example.foodmaps.data.model.Result
 
+/*
+    Adapts the information that will be used for the Resturaunt results page's recycler view.
+ */
 class ResultAdapter(private val context: Context, private val dataset: List<Result>)
     :RecyclerView.Adapter<ResultAdapter.ResultViewHolder>(){
         class ResultViewHolder(view : View) : RecyclerView.ViewHolder(view){

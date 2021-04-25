@@ -8,6 +8,9 @@ import com.example.foodmaps.R
 import com.example.foodmaps.data.datasource.ResultDataSource
 import com.example.foodmaps.data.adapter.ResultAdapter
 
+/*
+    Controls the Restaurant Results Activity Page
+ */
 class ResultsActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +19,7 @@ class ResultsActivity : AppCompatActivity() {
 
         // Loading Restaurants to activity
         val restaurantResults = ResultDataSource().loadResults()
-        recyclerView = findViewById<RecyclerView>(R.id.recycler_view_result)
+        recyclerView = findViewById(R.id.recycler_view_result)
         val manager = LinearLayoutManager(this)
         recyclerView.layoutManager = manager
         recyclerView.setHasFixedSize(false)
